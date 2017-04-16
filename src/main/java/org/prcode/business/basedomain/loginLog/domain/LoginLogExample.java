@@ -405,6 +405,76 @@ public class LoginLogExample {
             return (Criteria) this;
         }
 
+        public Criteria andSystemCodeIsNull() {
+            addCriterion("loginLog.f_system_code is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeIsNotNull() {
+            addCriterion("loginLog.f_system_code is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeEqualTo(String value) {
+            addCriterion("loginLog.f_system_code =", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeNotEqualTo(String value) {
+            addCriterion("loginLog.f_system_code <>", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeGreaterThan(String value) {
+            addCriterion("loginLog.f_system_code >", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeGreaterThanOrEqualTo(String value) {
+            addCriterion("loginLog.f_system_code >=", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeLessThan(String value) {
+            addCriterion("loginLog.f_system_code <", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeLessThanOrEqualTo(String value) {
+            addCriterion("loginLog.f_system_code <=", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeLike(String value) {
+            addCriterion("loginLog.f_system_code like", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeNotLike(String value) {
+            addCriterion("loginLog.f_system_code not like", value, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeIn(List<String> values) {
+            addCriterion("loginLog.f_system_code in", values, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeNotIn(List<String> values) {
+            addCriterion("loginLog.f_system_code not in", values, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeBetween(String value1, String value2) {
+            addCriterion("loginLog.f_system_code between", value1, value2, "systemCode");
+            return (Criteria) this;
+        }
+
+        public Criteria andSystemCodeNotBetween(String value1, String value2) {
+            addCriterion("loginLog.f_system_code not between", value1, value2, "systemCode");
+            return (Criteria) this;
+        }
+
         public Criteria andSysAddTimeIsNull() {
             addCriterion("loginLog.f_sys_add_time is null");
             return (Criteria) this;

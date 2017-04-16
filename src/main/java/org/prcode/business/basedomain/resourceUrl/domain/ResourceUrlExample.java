@@ -665,6 +665,66 @@ public class ResourceUrlExample {
             return (Criteria) this;
         }
 
+        public Criteria andNeedCsrfIsNull() {
+            addCriterion("resourceUrl.f_need_csrf is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfIsNotNull() {
+            addCriterion("resourceUrl.f_need_csrf is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfEqualTo(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf =", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfNotEqualTo(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf <>", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfGreaterThan(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf >", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf >=", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfLessThan(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf <", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfLessThanOrEqualTo(Boolean value) {
+            addCriterion("resourceUrl.f_need_csrf <=", value, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfIn(List<Boolean> values) {
+            addCriterion("resourceUrl.f_need_csrf in", values, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfNotIn(List<Boolean> values) {
+            addCriterion("resourceUrl.f_need_csrf not in", values, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfBetween(Boolean value1, Boolean value2) {
+            addCriterion("resourceUrl.f_need_csrf between", value1, value2, "needCsrf");
+            return (Criteria) this;
+        }
+
+        public Criteria andNeedCsrfNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("resourceUrl.f_need_csrf not between", value1, value2, "needCsrf");
+            return (Criteria) this;
+        }
+
         public Criteria andSysAddTimeIsNull() {
             addCriterion("resourceUrl.f_sys_add_time is null");
             return (Criteria) this;
