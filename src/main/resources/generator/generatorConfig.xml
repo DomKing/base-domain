@@ -7,6 +7,7 @@
     <!--mysql 连接数据库jar-->
     <classPathEntry location="D:\Program Files\MySQL\Connector J 5.1.31\mysql-connector-java-5.1.31-bin.jar" />
     <context id="testTables" targetRuntime="MyBatis3" defaultModelType="flat">
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="false" />
@@ -26,7 +27,7 @@
         </javaTypeResolver>
 
         <!-- targetProject:生成PO类的位置 -->
-        <javaModelGenerator targetPackage="org.prcode.business.basedomain.loginLog.domain"
+        <javaModelGenerator targetPackage="org.prcode.business.basedomain.role.domain"
                             targetProject="src/main/java" >
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
@@ -44,7 +45,7 @@
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
         <!-- targetPackage：mapper接口生成的位置 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="org.prcode.business.basedomain.loginLog.dao" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="org.prcode.business.basedomain.role.dao" targetProject="src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
@@ -52,9 +53,9 @@
         <!-- 指定数据库表, 可以多个，则多个table标签 -->
         <!--如果xml中没有@mbg.generated，重新生成就会在后面追加着写-->
         <!--alias只是在sql的查询中字段加前缀-->
-        <table schema="" tableName="t_login_log"
-               domainObjectName="LoginLog"
-               alias="loginLog"
+        <table schema="" tableName="t_role"
+               domainObjectName="Role"
+               alias="role"
                enableDeleteByExample="false"
                enableDeleteByPrimaryKey="false">
             <property name="useActualColumnNames" value="false"/>
